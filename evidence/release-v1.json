@@ -1,0 +1,36 @@
+{
+  "name": "Custom XDJ v1",
+  "target_model": "XDJ-1000MK2",
+  "target_firmware": "1.44",
+  "tested_unit": {
+    "model_suffix": "LSYXJ",
+    "manufacture_month": "2017-12",
+    "pcb_revision": null,
+    "unit_count": 1
+  },
+  "status": {
+    "final16_hardware": "owner accepted",
+    "custom_label_package": "built and byte-audited; not yet installed in recorded session"
+  },
+  "hashes": {
+    "official_update": "b21d499d8964986216b6a235cff5849300d966d3801b522c17461a42a1ff1448",
+    "stock_application": "9ca3a6bab97bb1d32a85ff740791f06b828e96cb4a1d3660a911bb72062f1db0",
+    "final16_update": "322364190bacee1c3439809ac3979058b3202f7407d1b4028acd29522bad0e78",
+    "custom_v1_update": "ce23b4f3d198f5066bc6861223d249d9c66d979b5f0af54a0d32e8e2cb0671f6",
+    "custom_v1_application": "7043737b5a8e1c2d42b1435486871a686f1edf53e1c0fef79c7e0eec58ecebe3"
+  },
+  "local_development_validation": {
+    "node_tests_passed": 33,
+    "python_tests_passed": 384,
+    "private_fixtures_present": true,
+    "runtime_extension_identical_to_final16": true,
+    "boot_updater_panel_identical_to_stock": true
+  },
+  "limits": [
+    "No proven rescue from an application hang",
+    "Not tested on firmware 1.45 or other models",
+    "No multi-hour soak claim",
+    "No installed feature toggle",
+    "No complete LINK source and key-refresh matrix"
+  ]
+}

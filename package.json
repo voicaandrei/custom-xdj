@@ -1,0 +1,17 @@
+{
+  "name": "custom-xdj",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "start": "python3 -m http.server 8765 --bind 127.0.0.1 --directory web",
+    "import": "node scripts/import-anlz.mjs"
+  },
+  "license": "MIT",
+  "description": "Full-track browser waveform previews for the exact XDJ-1000MK2 1.44 firmware",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/voicaandrei/custom-xdj.git"
+  }
+}
