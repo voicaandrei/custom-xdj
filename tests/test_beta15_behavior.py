@@ -12,7 +12,7 @@ class Beta15Behavior(unittest.TestCase):
             exe=Path(tmp)/'test'
             subprocess.run(['cc','-std=c99','-O2','-Wall','-Wextra','-Werror',
                 '-fsanitize=undefined','-fno-sanitize-recover=all','-I',str(ROOT/'native'),
-                *[str(ROOT/p) for p in sources],'-o',str(exe)],check=True,capture_output=True,timeout=30)
+                *[str(ROOT/p) for p in sources],'-o',str(exe)],check=True,timeout=30)
             subprocess.run([str(exe),*map(str,args)],check=True,timeout=15)
 
     def test_exact_rows_bounds_releases_errors_and_non_info_passthrough(self):

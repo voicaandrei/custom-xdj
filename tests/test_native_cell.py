@@ -46,7 +46,7 @@ class NativeCell(unittest.TestCase):
                                check=True, capture_output=True, text=True, timeout=30)
                 undefined = subprocess.run([lister, '-u', obj], check=True,
                                            capture_output=True, text=True, timeout=15)
-                external = [symbol.lstrip('_') for symbol in undefined.stdout.split()]
+                external = [line.split()[-1].lstrip('_') for line in undefined.stdout.splitlines() if line.strip()]
                 self.assertEqual([s for s in external if not s.startswith('xdj_')], [],
                                  f'{name} needs a symbol outside this project')
 
