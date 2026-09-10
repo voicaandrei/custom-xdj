@@ -1,5 +1,7 @@
 # Custom XDJ v1
 
+[![Source checks](https://github.com/voicaandrei/custom-xdj/actions/workflows/checks.yml/badge.svg)](https://github.com/voicaandrei/custom-xdj/actions/workflows/checks.yml)
+
 **Full-track waveform previews for the Pioneer DJ XDJ-1000MK2.** See a track's structure while browsing, keep a wider preview in INFO, and spot stock key compatibility with a green indicator.
 
 This independent project brings a small part of the waveform-oriented browsing workflow associated with newer players to the XDJ-1000MK2. It is an original modification of the MK2 application, not a port of CDJ-3000 firmware.
